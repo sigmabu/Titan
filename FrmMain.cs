@@ -24,6 +24,7 @@ namespace Titan
         {
             InitializeComponent();
             Init_Screen();
+            timer1.Start();
         }
 
         private void Init_Screen()
@@ -119,5 +120,12 @@ namespace Titan
             }
         }
         #endregion
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            DateTime datetime = DateTime.Now;
+
+            lbl_Time.Text = datetime.ToString();
+        }
     }
 }

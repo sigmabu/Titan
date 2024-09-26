@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.btnEXIT = new System.Windows.Forms.Button();
             this.rdb_Maint = new System.Windows.Forms.RadioButton();
@@ -40,7 +41,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblMessage = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.btn_printScreen = new System.Windows.Forms.Button();
             this.pnlRecipe = new System.Windows.Forms.Panel();
             this.lbl_Grp = new System.Windows.Forms.Label();
             this.lbl_Dev = new System.Windows.Forms.Label();
@@ -56,12 +56,16 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.pnl_mather = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btn_printScreen = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pb_CI = new System.Windows.Forms.PictureBox();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlRecipe.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnl_mather.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_CI)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,14 +165,6 @@
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label19.Name = "label19";
             // 
-            // btn_printScreen
-            // 
-            this.btn_printScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            resources.ApplyResources(this.btn_printScreen, "btn_printScreen");
-            this.btn_printScreen.FlatAppearance.BorderSize = 0;
-            this.btn_printScreen.Name = "btn_printScreen";
-            this.btn_printScreen.UseVisualStyleBackColor = false;
-            // 
             // pnlRecipe
             // 
             this.pnlRecipe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
@@ -224,7 +220,7 @@
             // lblError
             // 
             resources.ApplyResources(this.lblError, "lblError");
-            this.lblError.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblError.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.lblError.Name = "lblError";
             // 
             // label16
@@ -250,7 +246,7 @@
             // 
             resources.ApplyResources(this.lbl_Time, "lbl_Time");
             this.lbl_Time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.lbl_Time.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lbl_Time.ForeColor = System.Drawing.Color.White;
             this.lbl_Time.Name = "lbl_Time";
             // 
             // radioButton1
@@ -279,15 +275,39 @@
             // 
             this.pnl_mather.BackColor = System.Drawing.Color.Black;
             this.pnl_mather.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_mather.Controls.Add(this.pictureBox1);
             this.pnl_mather.Controls.Add(this.pb_CI);
             resources.ApplyResources(this.pnl_mather, "pnl_mather");
             this.pnl_mather.Name = "pnl_mather";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btn_printScreen
+            // 
+            this.btn_printScreen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            resources.ApplyResources(this.btn_printScreen, "btn_printScreen");
+            this.btn_printScreen.FlatAppearance.BorderSize = 0;
+            this.btn_printScreen.Name = "btn_printScreen";
+            this.btn_printScreen.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = global::Titan.Properties.Resources.Login;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.InitialImage = global::Titan.Properties.Resources.Login;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown_CI);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MouseMove_CI);
             // 
             // pb_CI
             // 
             this.pb_CI.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this.pb_CI, "pb_CI");
-            this.pb_CI.InitialImage = global::Titan.Properties.Resources.home;
             this.pb_CI.Name = "pb_CI";
             this.pb_CI.TabStop = false;
             this.pb_CI.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MouseDown_CI);
@@ -327,6 +347,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.pnl_mather.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_CI)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -363,6 +384,8 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Panel pnl_mather;
         private System.Windows.Forms.PictureBox pb_CI;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
