@@ -1,0 +1,12 @@
+D:\01_Source\Titan\obj\Release\Titan.csproj.AssemblyReference.cache
+D:\01_Source\Titan\obj\Release\Titan.vwRecipe.resources
+D:\01_Source\Titan\obj\Release\Titan.vwMaint.resources
+D:\01_Source\Titan\obj\Release\Titan.FrmMain.resources
+D:\01_Source\Titan\obj\Release\Titan.Properties.Resources.resources
+D:\01_Source\Titan\obj\Release\Titan.csproj.GenerateResource.cache
+D:\01_Source\Titan\obj\Release\Titan.csproj.CoreCompileInputs.cache
+D:\01_Source\Titan\bin\Release\Titan.exe.config
+D:\01_Source\Titan\bin\Release\Titan.exe
+D:\01_Source\Titan\bin\Release\Titan.pdb
+D:\01_Source\Titan\obj\Release\Titan.exe
+D:\01_Source\Titan\obj\Release\Titan.pdb
