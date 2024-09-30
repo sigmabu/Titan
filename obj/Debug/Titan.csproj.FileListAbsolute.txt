@@ -1,0 +1,13 @@
+D:\01_Source\Titan\bin\Debug\Titan.exe.config
+D:\01_Source\Titan\bin\Debug\Titan.exe
+D:\01_Source\Titan\bin\Debug\Titan.pdb
+D:\01_Source\Titan\obj\Debug\Titan.csproj.AssemblyReference.cache
+D:\01_Source\Titan\obj\Debug\Titan.vwMain.resources
+D:\01_Source\Titan\obj\Debug\Titan.vwRecipe.resources
+D:\01_Source\Titan\obj\Debug\Titan.vwMaint.resources
+D:\01_Source\Titan\obj\Debug\Titan.FrmMain.resources
+D:\01_Source\Titan\obj\Debug\Titan.Properties.Resources.resources
+D:\01_Source\Titan\obj\Debug\Titan.csproj.GenerateResource.cache
+D:\01_Source\Titan\obj\Debug\Titan.csproj.CoreCompileInputs.cache
+D:\01_Source\Titan\obj\Debug\Titan.exe
+D:\01_Source\Titan\obj\Debug\Titan.pdb
